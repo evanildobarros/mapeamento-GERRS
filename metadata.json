@@ -1,0 +1,7 @@
+{
+  "name": "Mapeamento das Comunidades do Itaqui",
+  "description": "A specialized mapping application for the Porto do Itaqui region, featuring custom layers for industrial zones, environmental protection, and community interaction, powered by Gemini AI.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
