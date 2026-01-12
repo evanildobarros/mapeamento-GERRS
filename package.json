@@ -9,18 +9,27 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@google/genai": "latest",
+    "@mapbox/togeojson": "0.16.2",
+    "@react-google-maps/api": "^2.20.8",
+    "@tailwindcss/vite": "^4.1.18",
+    "buffer": "^6.0.3",
+    "idb-keyval": "^6.2.2",
+    "leaflet": "1.9.4",
+    "lucide-react": "0.292.0",
+    "process": "^0.11.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "leaflet": "1.9.4",
     "react-leaflet": "4.2.1",
-    "lucide-react": "0.292.0",
-    "@google/genai": "latest",
-    "shpjs": "4.0.4",
-    "@mapbox/togeojson": "0.16.2"
+    "shpjs": "4.0.4"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }

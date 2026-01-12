@@ -6,7 +6,13 @@ export interface Coordinate {
 export enum LayerType {
   POLYGON = 'POLYGON',
   MARKER = 'MARKER',
-  HEATMAP = 'HEATMAP'
+  HEATMAP = 'HEATMAP',
+  POLYLINE = 'POLYLINE'
+}
+
+export interface MapFeature {
+  type: LayerType;
+  data: Coordinate | Coordinate[] | Coordinate[][]; // Coordinate (Marker), Coordinate[] (Polygon), Coordinate[][] (MultiPolygon or Polygon with holes)
 }
 
 export interface MapLayer {
@@ -16,7 +22,8 @@ export interface MapLayer {
   type: LayerType;
   visible: boolean;
   color: string;
-  data: Coordinate[] | Coordinate; // Polygon points or Marker position
+  data?: Coordinate[] | Coordinate; // Kept for backward compatibility with initial layers
+  features?: MapFeature[]; // New way to store multiple features
   details?: {
     title: string;
     content: string;
